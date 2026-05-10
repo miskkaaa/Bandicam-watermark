@@ -21,11 +21,11 @@ using namespace geode::prelude;
         }
 */
 
-#define SHIT 42069
+#define SHIT "bandicam_overlay"
 
 CCSprite* getw() {
     auto overlay = OverlayManager::get();
-    return static_cast<CCSprite*>(overlay->getChildByTag(SHIT));
+    return dynamic_cast<CCSprite*>(overlay->getChildByID(SHIT));
 }
 
 void bscreate() {
@@ -42,7 +42,7 @@ void bscreate() {
     auto spr = CCSprite::create("bandicam.png"_spr);
     if (!spr) return;
 
-    spr->setTag(SHIT);
+    spr->setID(SHIT);
     spr->setAnchorPoint({0.5f, 1.0f});
     spr->setPosition({ws.width / 2.0f, ws.height});
     spr->setZOrder(42069);

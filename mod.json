@@ -8,10 +8,14 @@
 	},
 	"id": "miskaa.bandicam",
 	"name": "Bandicam watermark",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "miskaa",
 	"description": "Something just like untitled hypercam but bandicam",
 	"tags": ["joke"],
+	"links": {
+		"source": "https://github.com/miskkaaa/Bandicam-watermark",
+		"homepage": "https://miskaa.pl"
+	},
 	"dependencies": {
 		"geode.node-ids": ">=v1.23.3"
 	},
